@@ -13,7 +13,7 @@ func LoadConfig() {
     }
 }
 
-func GetEnv(key string) {
+func GetEnv(key string) string {
     return os.Getenv(key)
 }
 

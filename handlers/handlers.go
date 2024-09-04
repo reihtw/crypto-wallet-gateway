@@ -32,11 +32,11 @@ func LoginUser(c *gin.Context) {
 
 func GetBalance(c *gin.Context) {
     userId := c.Param("userId")
-    balanceServiceURL = config.GetEnv("BALANCE_SERVICE_URL") + "/balance/" + userId
+    balanceServiceURL := config.GetEnv("BALANCE_SERVICE_URL") + "/balance/" + userId
 
     resp, err := http.Get(balanceServiceURL)
     if err != nil {
-        c.JSON(http.StatusInternalServerError, gin.H{"error", err.Error()})
+        c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
         return
     }
     defer resp.Body.Close()
