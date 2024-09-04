@@ -1,7 +1,7 @@
 package handlers
 
 import (
-    "crypto-wallet-gateway/config"
+    "github.com/reihtw/crypto-wallet-gateway/config"
     "github.com/gin-gonic/gin"
     "net/http"
 )

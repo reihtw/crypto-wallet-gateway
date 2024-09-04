@@ -1,7 +1,7 @@
 package routes
 
 import (
-    "crypto-wallet-gateway/handlers"
+    "github.com/reihtw/crypto-wallet-gateway/handlers"
     "github.com/gin-gonic/gin"
 )
 

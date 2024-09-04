@@ -1,8 +1,8 @@
 package main
 
 import (
-    "crypto-wallet-gateway/config"
-    "crypto-wallet-gateway/routes"
+    "github.com/reihtw/crypto-wallet-gateway/config"
+    "github.com/reihtw/crypto-wallet-gateway/routes"
     "log"
 )
 
